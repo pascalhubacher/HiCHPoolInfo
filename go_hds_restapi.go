@@ -71,7 +71,7 @@
 #   2018-05-25 - v01.0.13      - BUG: Check if 'availablePhysicalVolumeCapacity' exists. If not take 'availableVolumeCapacity' (pascal hubacher)
 #   2018-06-01 - v01.0.14      - BUG: Line 746 : Value was divided by mistake by Mb2Gb (1024). The Mb2Gb was removed. (pascal hubacher)
 #   2018-06-15 - v01.0.15      - BUG: Version control was wrong. (pascal hubacher)
-#								 Change: Ordering of the output changed to show the 'Compression ratio FMC' closer to the physical values. 
+#								 Change: Ordering of the output changed to show the 'Compression ratio FMC' closer to the physical values.
 #								         And the 'Compression ratio total' closer to the Effective total GB free. (roman siegenthaler)
 #								 Change: Name changed from 'Effective GB free [GB]' to 'Effective total GB free [GB]' (roman siegenthaler)
 #
@@ -358,31 +358,26 @@ func main() {
 		Protocol = "http"
 		*PortPtr = "23450"
 		*UserPtr = "maintenance"
-		*PasswordPtr = "Demo5hds"
-		*HostPtr = "10.70.5.40"
+		*PasswordPtr = "password"
+		*HostPtr = "10.1.1.1"
 	*/
 
 	/*
-		470018
+		G600
 		//storage api
 		//Protocol = "https"
 		//*PortPtr = "443"
 		*UserPtr = "maintenance"
-		*PasswordPtr = "Demo5hds"
-		*HostPtr = "10.70.5.104"
+		*PasswordPtr = "password"
+		*HostPtr = "10.1.1.1"
 	*/
 
 	/*
-	   58679
-	   10.70.5.145
-	*/
-
-	/*
-		58068
+		G1000
 		*PortPtr = "443"
 		*UserPtr = "maintenance"
-		*PasswordPtr = "Demo5hds"
-		*HostPtr = "10.70.4.145"
+		*PasswordPtr = "password"
+		*HostPtr = "10.1.1.1"
 	*/
 	//*VerbosePtr = "y"
 
